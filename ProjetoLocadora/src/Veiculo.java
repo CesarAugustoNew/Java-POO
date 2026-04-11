@@ -62,24 +62,7 @@ abstract class Veiculo {
         this.precoBase = precoBase;
     }
 
-    public String toString() {
-        return marca + " " + modelo + " (" + ano + ")";
-    }
-}
-
-// PILAR 3 - HERANÇA
-// Carro e Moto herdam tudo de Veiculo, mas cada um adiciona
-// seus próprios atributos e implementa calcularDiaria() do seu jeito.
-
-//CARRO -> qtdPortas (atributo)
-// método calcularDiaria -> se qtdPortas >= 4 então acréscimo de 20%
-
-
-abstract class Carro extends Veiculo {
-    private int quantidadePortas;
-
-    public Carro(String marca, String modelo, int ano, String placa, double precoBase, int quantidadePortas) {
-        super(marca, modelo, ano, placa, precoBase);
-        this.quantidadePortas = quantidadePortas;
+    public String exibirDados() {
+        return marca + " " + modelo + " (" + ano + ")" + " " + placa + " " + precoBase;
     }
 }
