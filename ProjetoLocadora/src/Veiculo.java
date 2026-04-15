@@ -26,7 +26,7 @@ abstract class Veiculo {
         this.precoBase = precoBase;
     }
 
-    /// método abstrato - CADA SUBTIPO DEFINE O CALCULO
+    /// metodo abstrato - CADA SUBTIPO DEFINE O CALCULO
     public abstract double calcularDiaria();
 
     //PILAR 2 - ENCAPSULAMENTO
@@ -63,6 +63,6 @@ abstract class Veiculo {
     }
 
     public String exibirDados() {
-        return marca + " " + modelo + " (" + ano + ")" + " " + placa + " " + precoBase;
+        return marca + " " + modelo + " (" + ano + ")" + " " + placa;
     }
 }
